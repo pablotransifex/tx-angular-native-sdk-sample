@@ -18,8 +18,4 @@ export class AppComponent {
       sourceLocale: 'en',
     });
   }
-
-  locale() {
-    this.translationService.setLocale('el');
-  }
 }
