@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { TxNativeModule, TranslationService } from '@transifex/angular';
 
 import { AppComponent } from './app.component';
 
@@ -8,9 +9,12 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TxNativeModule
   ],
-  providers: [],
+  providers: [
+    TranslationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
