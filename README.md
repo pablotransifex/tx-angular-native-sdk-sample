@@ -1,10 +1,39 @@
-# TxAngularNativeSdkSample
+# Angular Native Sdk Sample Application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+
+## Dependencies
+
+The sample application needs the following packages:
+- Transifex Native Javascript SDK (@transifex/native)
+- Transifex Native Angular SDK (@transifex/angular)
+
+If @transifex/angular is under development, you can install it with the command:
+
+```
+npm install file:../tx-angular-native-sdk/dist/tx-angular-native-sdk/transifex-angular-0.0.1.tgz
+```
+
+## Getting started
+
+You need a "reasonably recent" version of node/npm to run this application.
+
+In order to get started, you can run:
+
+```sh
+# Will install all packages listed in package.json
+npm install
+
+# Will run the 'start' script from package.json, which compiles the application
+# and starts a development server
+npm run start
+```
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+Change the languages using the language picker and see the translations being rendered in real time.
 
 ## Code scaffolding
 
