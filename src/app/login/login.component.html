@@ -2,35 +2,36 @@
   <h1 class="marginBottom-2x">
     <T
       _str="Hi 👋! Welcome to Native test"
-      [_vars]="{ _key: 'text.main_title' }"
+      _key="text.main_title"
     ></T>
   </h1>
 
   <p class="color-secondary">
     <UT
       _str="It’s {weekday} today, and it is a fine day to try out Native! Checkout the offering below!"
-      [_vars]="{ _key: 'text.intro_message', weekday: _weekday }"
+      _key="text.intro_message"
+      [_vars]="{ weekday: _weekday }"
     ></UT>
   </p>
 
   <p class="color-secondary marginBottom-2x">
-    <T _str="Please log in to continue." [_vars]="{ _key: 'text.login_message' }"></T>
+    <T _str="Please log in to continue." _key="text.login_message"></T>
   </p>
 
   <p class="marginBottom-2x">
-    <label><T _str="Email" [_vars]="{ _key: 'label.email' }"></T></label>
+    <label><T _str="Email" _key="label.email"></T></label>
     <input type="text" name="email" />
   </p>
 
   <p class="marginBottom-2x">
     <label
-      ><T _str="Password" [_vars]="{ _key: 'label.password' }"></T
+      ><T _str="Password" _key="label.password"></T
     ></label>
     <input type="password" name="password" />
   </p>
 
   <button class="button marginBottom-1x">
-    <T _str="Login" [_vars]="{ _key: 'button.login' }"></T>
+    <T _str="Login" _key="button.login"></T>
   </button>
 
   <hr class="dividerBottom marginBottom-1x" />
@@ -38,8 +39,8 @@
   <p class="small-text">
     <UT
       _str="By proceeding you agree to the {terms_of_services} and {privacy_policy}."
-      [_vars]="{ _key: 'text.agree_message',
-        terms_of_services: '<a href=\'terms\'>' + _terms + '</a>',
+      _key="text.agree_message"
+      [_vars]="{ terms_of_services: '<a href=\'terms\'>' + _terms + '</a>',
         privacy_policy: '<a href=\'privacy\'>' + _privacy + '</a>'
       }"
     ></UT>
