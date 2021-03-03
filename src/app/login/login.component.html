@@ -1,0 +1,49 @@
+<div class="bg-white centered width-small divider padding-1x">
+  <h1 class="marginBottom-2x">
+    <T
+      _str="Hi 👋! Welcome to Native test"
+      [_vars]="{ _key: 'text.main_title' }"
+    ></T>
+  </h1>
+
+  <p class="color-secondary">
+    <UT
+      _str="It’s {weekday} today, and it is a fine day to try out Native! Checkout the offering below!"
+      [_vars]="{ _key: 'text.intro_message', weekday: _weekday }"
+    ></UT>
+  </p>
+
+  <p class="color-secondary marginBottom-2x">
+    <T _str="Please log in to continue."></T>
+  </p>
+
+  <p class="marginBottom-2x">
+    <label><T _str="Email" [_vars]="{ _key: 'label.email' }"></T></label>
+    <input type="text" name="email" />
+  </p>
+
+  <p class="marginBottom-2x">
+    <label
+      ><T _str="Password" [_vars]="{ _key: 'label.password' }"></T
+    ></label>
+    <input type="password" name="password" />
+  </p>
+
+  <button class="button marginBottom-1x">
+    <T _str="Login" [_vars]="{ _key: 'button.login' }"></T>
+  </button>
+
+  <hr class="dividerBottom marginBottom-1x" />
+
+  <p class="small-text">
+    <UT
+      _str="By proceeding you agree to the {terms_of_services} and {privacy_policy}."
+      [_vars]="{ _key: 'text.agree_message',
+        terms_of_services: '<a href=\'#\'>' + _terms + '</a>',
+        privacy_policy: '<a href=\'#\'>' + _privacy + '</a>'
+      }"
+    ></UT>
+  </p>
+</div>
+
+<app-language-picker class="placeBottomLeft" (localeChanged)="onLocaleChanged($event)"></app-language-picker>

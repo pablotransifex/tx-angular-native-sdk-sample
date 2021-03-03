@@ -1,1 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    padding: 0;
+    margin: 0;
+
+    font-size: 16px;
+    font-family: 'Open Sans', Arial;
+
+    font-weight: 300;
+
+    color: #282828;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.centered { margin: 0 auto !important; }
+
+.padding-1x { padding: 1rem !important; }
+.padding-2x { padding: 2rem !important; }
+
+.margin-1x { margin: 1rem !important; }
+.margin-2x { margin: 2rem !important; }
+
+.marginBottom-1x { margin-bottom: 1rem !important; }
+.marginBottom-2x { margin-bottom: 2rem !important; }
+
+
+.width-small { width: 34em !important; }
+.width-big   { width: 34em !important; }
+
+.divider { border: 1px solid #efefef; }
+.dividerBottom { border: 1px solid #efefef; }
+
+.bg-default { background-color: #dddddd; }
+.bg-white   { background-color: #ffffff; }
+
+.color-secondary    { color: #666666; }
+
+.small-text { font-size: 0.85rem; }
+
+.button {
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    width: 100%;
+    height: 3rem;
+
+    line-height: 3rem;
+
+    background-color: #0da874;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    border-radius: 2px;
+}
+
+label,
+input {
+    display: inline-block;
+
+    width: 100%;
+
+    margin-bottom: 0.25rem;
+}
+
+select,
+input {
+    font-size: 1rem;
+
+    height: 3rem;
+    line-height: 3rem;
+
+    padding: 0 0.25rem;
+}
+
+select {
+    background-color: transparent;
+    border: 1px solid #666666;
+
+    color: #666666;
+}
+
+.placeBottomRight {
+    position: absolute;
+
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.placeBottomLeft {
+    position: absolute;
+
+    left: 2rem;
+    bottom: 2rem;
+}

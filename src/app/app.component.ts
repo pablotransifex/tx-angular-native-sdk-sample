@@ -7,15 +7,14 @@ import { TranslationService } from '@transifex/angular';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tx-angular-native-sdk-sample';
-  translationService: TranslationService;
+  title = 'TX Native Angular Demo';
 
-  constructor(private _translationService: TranslationService) {
-    this.translationService = _translationService;
-    this.translationService.init({
+  constructor(private translationService: TranslationService) {
+    translationService.init({
       token: '1/e41ce31df46f0526af6ea4931daa7718b3d7e843',
       secret: '1/bec6bc714f11fa2cca330f6c7c69500bb8ecfe0a',
       sourceLocale: 'en',
     });
+    translationService.setLocale('en');
   }
 }
